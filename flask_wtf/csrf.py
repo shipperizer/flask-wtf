@@ -20,7 +20,7 @@ from werkzeug.security import safe_str_cmp
 
 from ._compat import FlaskWTFDeprecationWarning, string_types, urlparse
 
-__all__ = ('generate_csrf', 'validate_csrf', 'CsrfProtect')
+__all__ = ('generate_csrf', 'validate_csrf', 'CsrfProtect', 'CsrfError')
 
 
 def _get_secret_key(secret_key=None):
